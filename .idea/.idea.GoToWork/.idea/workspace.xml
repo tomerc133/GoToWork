@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8dd57b2-e4ce-4017-9dcd-1703804ba6e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Sphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sphere.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/cannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/cannon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609779776236</updated>
-      <workItem from="1609779780578" duration="260000" />
+      <workItem from="1609779780578" duration="526000" />
     </task>
     <servers />
   </component>
