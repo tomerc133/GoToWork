@@ -14,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,10 +27,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OnTriggerChild.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TagSelectorPropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TagSelectorAttribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
       </list>
     </option>
   </component>
@@ -80,7 +82,7 @@
       <updated>1609779776236</updated>
       <workItem from="1609779780578" duration="526000" />
       <workItem from="1609861310807" duration="13646000" />
-      <workItem from="1609968260193" duration="595000" />
+      <workItem from="1609968260193" duration="5941000" />
     </task>
     <servers />
   </component>
@@ -97,9 +99,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="937" y="331" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1609871806008" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1609870371227">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1609973546902">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1609870371227" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1609973546902" />
   </component>
 </project>

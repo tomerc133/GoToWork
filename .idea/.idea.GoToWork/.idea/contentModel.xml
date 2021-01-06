@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BuildingScript.cs" t="Include" />
+          <e p="CameraScript.cs" t="Include" />
           <e p="CannonController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="RagdollScript.cs" t="Include" />
