@@ -4,13 +4,8 @@
     <e p="C:\Users\ofeka\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\ofeka\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GoToWork.1950286023.00" t="ExcludeRecursive" />
     <e p="C:\Users\ofeka\Desktop\Studies\Unity\ModuleProjects\GoToWork" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Editor" t="Include">
-          <e p="TagSelectorAttribute.cs" t="Include" />
-          <e p="TagSelectorPropertyDrawer.cs" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="BuildingScript.cs" t="Include" />
           <e p="CannonController.cs" t="Include" />
