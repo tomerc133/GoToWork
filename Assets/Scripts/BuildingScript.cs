@@ -6,14 +6,12 @@ public class BuildingScript : MonoBehaviour
 {
     [SerializeField] private GameObject glassFrac;
     [SerializeField] private GameObject glassFilled;
-    private GameObject volumeChild;
-    [SerializeField] int volumeIndex;
     private int i;
     
     // Start is called before the first frame update
     void Start()
     {
-        volumeChild = transform.GetChild(3).gameObject;
+        
     }
 
     // Update is called once per frame

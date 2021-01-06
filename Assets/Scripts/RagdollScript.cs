@@ -7,6 +7,8 @@ public class RagdollScript : MonoBehaviour
 {
     [Tooltip("INSERT TAG IN HERE U BABY, RUSH B NOOB TEAM")]
     [SerializeField] private string floorTag;
+
+    public bool scaleTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,13 @@ public class RagdollScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag(floorTag))
+        if (other.CompareTag(floorTag))
+        {
             Debug.Log("good job you soofbich im in!");
+            Time.timeScale = 0.5f;
+        }
+    
     }
+    
+    
 }
