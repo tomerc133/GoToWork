@@ -41,12 +41,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainManu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -58,11 +57,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TagSelectorAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
       </list>
     </option>
   </component>
@@ -115,6 +114,7 @@
       <workItem from="1609861310807" duration="13646000" />
       <workItem from="1609968260193" duration="5941000" />
       <workItem from="1610015279025" duration="6789000" />
+      <workItem from="1610029271513" duration="1846000" />
     </task>
     <servers />
   </component>
@@ -133,6 +133,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

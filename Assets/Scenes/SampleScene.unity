@@ -946,6 +946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 25, y: 0, z: 9}
   cameraSpeed: 5
+  volumeTrasnform: {fileID: 1435977814}
+  clampZOffset: 3
 --- !u!1 &1000531295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1238,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423844904}
   m_CullTransparentMesh: 0
+--- !u!4 &1435977814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8441921610592253426, guid: 7041d0817eb716c4f85db38d8300af08, type: 3}
+  m_PrefabInstance: {fileID: 1597999133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1440785586
 GameObject:
   m_ObjectHideFlags: 0
