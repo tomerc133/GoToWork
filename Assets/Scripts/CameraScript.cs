@@ -24,6 +24,7 @@ public class CameraScript : MonoBehaviour
     private void Start()
     {
         // Debug.Log(cannon.gameObject.name);
+        
     }
 
     // Update is called once per frame
@@ -39,11 +40,9 @@ public class CameraScript : MonoBehaviour
         
         if(!cannon.shotFired)
         {
-            transform.position = Vector3.Lerp(transform.position, startPos, 0.01f * cameraSpeed * 0.3f);
+            transform.position = Vector3.Lerp(transform.position, startPos, 0.01f * cameraSpeed * 0.5f);
         }
-
-        if (Input.GetKeyDown(KeyCode.B))
-            cannon.shotFired = false;
+        
     }
 
     void Update()

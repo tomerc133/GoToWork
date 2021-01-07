@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 
 public class RagdollScript : MonoBehaviour
@@ -10,25 +10,24 @@ public class RagdollScript : MonoBehaviour
     private string floorTag;
 
     private bool sloMo = false;
-    private bool cameraClamp;
 
     public bool scaleTime;
     private GameManager GameManager;
     private CameraScript _camera;
 
+    private Scene _scene;
+    private string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
-        cameraClamp = false;
         _camera = Camera.main.transform.GetComponent<CameraScript>();
+        _scene = SceneManager.GetActiveScene();
+        sceneName = _scene.name;
 
     }
-
-    public bool GetCameraClamp()
-    {
-        return cameraClamp;
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -40,7 +39,8 @@ public class RagdollScript : MonoBehaviour
         //         Time.timeScale = 1;
         //     }
         // }
-        _camera.ClampCamera();
+        if(sceneName != "MainMenu")
+            _camera.ClampCamera();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -49,7 +49,6 @@ public class RagdollScript : MonoBehaviour
         if (other.CompareTag(floorTag))
         {
            GameManager.addScore();
-           cameraClamp = true;
         }
     }
 }
