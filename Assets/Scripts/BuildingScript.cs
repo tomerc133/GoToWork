@@ -33,8 +33,12 @@ public class BuildingScript : MonoBehaviour
                     Destroy(glassFilled);
             }
         }
+
         if (glassFilled == null)
-            Debug.Log("Glass filled does not exist");
+        {
+            // Debug.Log("Glass filled does not exist");
+        }
+           
     }
     private void OnTriggerExit(Collider other)
     {

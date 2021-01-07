@@ -19,7 +19,7 @@ public class CameraScript : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(cannon.gameObject.name);
+        // Debug.Log(cannon.gameObject.name);
     }
 
     // Update is called once per frame

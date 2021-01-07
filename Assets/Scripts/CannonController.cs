@@ -6,47 +6,48 @@ using UnityEngine.UI;
 
 public class CannonController : MonoBehaviour
 {
-    [Header("Charging Shot")]
-    [SerializeField] private float shootMultiply = 5;
+    [Header("Charging Shot")] [SerializeField]
+    private float shootMultiply = 5;
+
     [SerializeField] private float slowDownDivider;
     private bool _chargeUp;
+    private int characterIndex = 0;
     public bool shotFired;
-    [Header("Prefabs to insert")]
-    [SerializeField] private GameObject cannonTip;
+
+    [Header("Prefabs to insert")] [SerializeField]
+    private GameObject cannonTip;
+
     [SerializeField] private GameObject[] charactersRb;
 
-    [Header("UI")]
-    [SerializeField] private Slider slider;
- 
-    
-    [Tooltip("Check in game mode if values change")][Header("View only Values")]
+    [Header("UI")] [SerializeField] private Slider slider;
+
+
+    [Tooltip("Check in game mode if values change")] [Header("View only Values")]
     public GameObject bulletClone;
+
     public Rigidbody bulletCloneHips;
-    
-    [Header("ReadOnly")]
-    [SerializeField]private float shootForce = 1;
+
+    [Header("ReadOnly")] [SerializeField] private float shootForce = 1;
     [SerializeField] private float hipsVelocity;
-    
-    
+
+
     void Start()
     {
         _chargeUp = true;
-        
     }
 
     // Update is called once per frame
 
     void Update()
     {
-        
         LookAtMouse();
 
         ShootPlayer();
 
         slider.value = shootForce;
-        
+
         // view the velocity in inspector
-        if(bulletCloneHips != null)
+        if (bulletCloneHips != null)
             hipsVelocity = bulletCloneHips.velocity.magnitude;
 
         Debug.DrawRay(cannonTip.transform.position, cannonTip.transform.up * 35, Color.green, 0.1f);
@@ -61,11 +62,12 @@ public class CannonController : MonoBehaviour
 
     private void ShootPlayer()
     {
-        if (!shotFired)
+        if (!shotFired && (charactersRb.Length  > characterIndex))
         {
             if (Input.GetMouseButtonDown(0))
             {
-                bulletClone = Instantiate(charactersRb[0], cannonTip.transform.position, cannonTip.transform.rotation);
+                bulletClone = Instantiate(charactersRb[characterIndex], cannonTip.transform.position,
+                    cannonTip.transform.rotation);
                 bulletCloneHips = bulletClone.transform.GetChild(0).GetComponent<Rigidbody>();
             }
 
@@ -79,6 +81,8 @@ public class CannonController : MonoBehaviour
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
                 if (shootForce <= 1)
                     _chargeUp = true;
+                bulletClone.transform.rotation = cannonTip.transform.rotation;
+                bulletClone.transform.position = cannonTip.transform.position;
             }
 
             if (Input.GetMouseButtonUp(0))
@@ -94,9 +98,14 @@ public class CannonController : MonoBehaviour
 
     void CheckCloneVelocity()
     {
-        if (bulletCloneHips.velocity.magnitude < 0.1)
+        if (bulletCloneHips.velocity.magnitude < 0.5)
         {
             shotFired = false;
+            if (charactersRb.Length-1  > characterIndex)
+            {
+                characterIndex++;
+                
+            }
             CancelInvoke("CheckCloneVelocity");
         }
     }
