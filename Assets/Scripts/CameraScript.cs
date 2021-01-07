@@ -11,6 +11,10 @@ public class CameraScript : MonoBehaviour
     [SerializeField] Vector3 offset;
     [SerializeField] private float cameraSpeed;
     private Transform bulletCloneHips;
+    
+
+    [SerializeField] private Transform volumeTrasnform;
+    [SerializeField] private float clampZOffset = 7;
     void Awake()
     {
         cannon = FindObjectOfType<CannonController>();
@@ -19,7 +23,8 @@ public class CameraScript : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(cannon.gameObject.name);
+        // Debug.Log(cannon.gameObject.name);
+        
     }
 
     // Update is called once per frame
@@ -35,15 +40,22 @@ public class CameraScript : MonoBehaviour
         
         if(!cannon.shotFired)
         {
-            transform.position = Vector3.Lerp(transform.position, startPos, 0.01f * cameraSpeed * 0.3f);
+            transform.position = Vector3.Lerp(transform.position, startPos, 0.01f * cameraSpeed * 0.5f);
         }
-
-        if (Input.GetKeyDown(KeyCode.B))
-            cannon.shotFired = false;
+        
     }
 
     void Update()
     {
+        
 
+    }
+
+    public void ClampCamera()
+    {
+        float clampedY = Mathf.Clamp(transform.position.y, 7, 55);
+        float clampedZ = Mathf.Clamp(transform.position.z, 0, volumeTrasnform.position.z + clampZOffset);
+        Vector3 clampedPos = new Vector3(transform.position.x, clampedY, clampedZ);
+        transform.position = clampedPos;
     }
 }

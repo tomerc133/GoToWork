@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     private RagdollScript _ragdollScript;
 
     private BuildingScript _buildingScript;
+
+    private int _score;
+    [SerializeField] private GameObject lvlComp;
+
+    [SerializeField] private int MaxScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +24,10 @@ public class GameManager : MonoBehaviour
         _ragdollScript = FindObjectOfType<RagdollScript>();
         _cameraScript = FindObjectOfType<CameraScript>();
         _cannonController = FindObjectOfType<CannonController>();
-    }
+        _score = 0;
 
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +36,17 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+        if (_score==MaxScore)
+        {
+            lvlComp.SetActive(true);
+            lvlComp.GetComponent<Animator>().SetTrigger("lvlComp");
+        }
+       
+    }
 
+    public void addScore()
+    {
+        _score++;
+        Debug.Log(_score);
     }
 }

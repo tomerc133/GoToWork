@@ -438,8 +438,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 14.268856, z: 16.577234}
-  m_Center: {x: -1.3630454e-16, y: 6.634428, z: -1.0095913}
+  m_Size: {x: 3.1609666, y: 14.268857, z: 16.577175}
+  m_Center: {x: -1.0804837, y: 6.6344285, z: -1.0095916}
 --- !u!1 &6871078565120701748
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glassFrac: {fileID: 8843122406416186146, guid: b55f75f823efeb7448a0d4f7c485545c, type: 3}
   glassFilled: {fileID: 1362702309735327133}
-  volumeIndex: 0
 --- !u!65 &9109773067616989001
 BoxCollider:
   m_ObjectHideFlags: 0
