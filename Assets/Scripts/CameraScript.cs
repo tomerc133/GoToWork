@@ -32,6 +32,7 @@ public class CameraScript : MonoBehaviour
     {
         if (cannon.shotFired)
         {
+            // camera zoom when cannon has fired.
             bulletCloneHips = cannon.bulletClone.transform.GetChild(0);
             transform.position = Vector3.Lerp(transform.position,
                 bulletCloneHips.position + offset, 0.01f * cameraSpeed);

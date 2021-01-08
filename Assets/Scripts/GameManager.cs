@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject lvlComp;
 
     [SerializeField] private int MaxScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +26,8 @@ public class GameManager : MonoBehaviour
         _cameraScript = FindObjectOfType<CameraScript>();
         _cannonController = FindObjectOfType<CannonController>();
         _score = 0;
-
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -36,12 +36,30 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (_score==MaxScore)
+        if (_cannonController.allTheCharactersWereShot())
         {
-            lvlComp.SetActive(true);
-            lvlComp.GetComponent<Animator>().SetTrigger("lvlComp");
+            StartCoroutine(levelCompEnumerator());
         }
-       
+    }
+
+    IEnumerator levelCompEnumerator()
+    {
+        yield return new WaitForSeconds(2);
+        lvlComp.SetActive(true);
+        if (_score == MaxScore)
+        {
+            lvlComp.GetComponent<Animator>().SetTrigger("3stars");
+        }
+
+        if (_score == MaxScore - 1)
+        {
+            lvlComp.GetComponent<Animator>().SetTrigger("2stars");
+        }
+
+        if (_score == MaxScore - 2)
+        {
+            lvlComp.GetComponent<Animator>().SetTrigger("1stars");
+        }
     }
 
     public void addScore()

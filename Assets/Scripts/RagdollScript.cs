@@ -17,6 +17,8 @@ public class RagdollScript : MonoBehaviour
 
     private Scene _scene;
     private string sceneName;
+    private float _velocity;
+    private bool inTheRightFloor =false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,20 +27,18 @@ public class RagdollScript : MonoBehaviour
         _camera = Camera.main.transform.GetComponent<CameraScript>();
         _scene = SceneManager.GetActiveScene();
         sceneName = _scene.name;
+        _velocity =transform.parent.GetComponent<Rigidbody>().velocity.magnitude;
 
     }
     
     // Update is called once per frame
     void Update()
     {
-        // if (sloMo)
-        // {
-        //     float currentTime = Time.time;
-        //     if (Time.time - currentTime > 1)
-        //     {
-        //         Time.timeScale = 1;
-        //     }
-        // }
+        if (_velocity < 0.5f && inTheRightFloor)
+        {
+            GameManager.addScore();
+            inTheRightFloor = false;
+        }
         if(sceneName != "MainMenu")
             _camera.ClampCamera();
     }
@@ -48,7 +48,14 @@ public class RagdollScript : MonoBehaviour
        
         if (other.CompareTag(floorTag))
         {
-           GameManager.addScore();
+            inTheRightFloor = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(floorTag))
+        {
+            inTheRightFloor = false;
         }
     }
 }

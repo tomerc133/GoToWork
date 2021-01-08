@@ -29,6 +29,9 @@ public class CannonController : MonoBehaviour
 
     [Header("ReadOnly")] [SerializeField] private float shootForce = 1;
     [SerializeField] private float hipsVelocity;
+    private int numOfShoots=0;
+   
+
 
 
     void Start()
@@ -62,7 +65,7 @@ public class CannonController : MonoBehaviour
 
     private void ShootPlayer()
     {
-        if (!shotFired && (charactersRb.Length  > characterIndex))
+        if (!shotFired && !allTheCharactersWereShot())
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -91,6 +94,7 @@ public class CannonController : MonoBehaviour
                     bodyPart.AddForce(transform.forward * shootForce, ForceMode.Impulse);
                 shootForce = 1;
                 shotFired = true;
+                numOfShoots++;
                 InvokeRepeating("CheckCloneVelocity", 0.2f, 0.1f);
             }
         }
@@ -108,5 +112,10 @@ public class CannonController : MonoBehaviour
             }
             CancelInvoke("CheckCloneVelocity");
         }
+    }
+
+    public bool allTheCharactersWereShot()
+    {
+        return charactersRb.Length == numOfShoots;
     }
 }
