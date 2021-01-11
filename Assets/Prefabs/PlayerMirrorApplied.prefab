@@ -150,7 +150,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000016599306, y: 0.8712468, z: -0.034179926}
+  m_ConnectedAnchor: {x: -0.00001721403, y: 0.87124825, z: -0.034179196}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -290,7 +290,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.8482978, y: 0.86735964, z: -0.009539448}
+  m_ConnectedAnchor: {x: -0.8482982, y: 0.8673606, z: -0.009538159}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -399,7 +399,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000004284084, y: 0.97596306, z: 0.000000059604645}
+  m_ConnectedAnchor: {x: -0.00000081025064, y: 0.9759626, z: -0.0000007748604}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -538,7 +538,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000010994896, y: 1.4388298, z: 0.051882505}
+  m_ConnectedAnchor: {x: -0.0000008767873, y: 1.4388316, z: 0.051883407}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -617,6 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorTag: Floor1
+  scaleTime: 0
 --- !u!65 &2025995927940372863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -962,7 +963,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.35232803, y: -0.2236546, z: 0.07170314}
+  m_ConnectedAnchor: {x: 0.3523273, y: -0.22365364, z: 0.0717035}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1040,7 +1041,7 @@ GameObject:
   - component: {fileID: 8374170202074461122}
   m_Layer: 0
   m_Name: mixamorig:RightLeg
-  m_TagString: Untagged
+  m_TagString: playerFoot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1101,7 +1102,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000055879354, y: 1.9690148, z: -0.000000031664968}
+  m_ConnectedAnchor: {x: -0.00000010058284, y: 1.9690143, z: 0.00000041164458}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1274,7 +1275,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000003222376, y: 0.9759113, z: 0.00000011920929}
+  m_ConnectedAnchor: {x: 0.000001417473, y: 0.9759132, z: -0.000000834465}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -1754,7 +1755,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000012293458, y: 1.9693016, z: 0.000000005122274}
+  m_ConnectedAnchor: {x: 0.0000003091991, y: 1.9693013, z: 0.00000021327287}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1863,7 +1864,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.35232776, y: -0.22365487, z: 0.066776715}
+  m_ConnectedAnchor: {x: -0.35232815, y: -0.22365391, z: 0.06677737}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2158,7 +2159,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.8482968, y: 0.86744785, z: -0.011864074}
+  m_ConnectedAnchor: {x: 0.8482961, y: 0.8674488, z: -0.011863202}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
