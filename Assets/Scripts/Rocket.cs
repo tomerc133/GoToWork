@@ -98,6 +98,7 @@ public class Rocket : MonoBehaviour
                         hit.attachedRigidbody.AddExplosionForce(15, explosionPos, radius, 5, ForceMode.Force);
                 }
             }
+            Destroy(gameObject);
             launchNow = false;
             _rb.isKinematic = true;
         }
