@@ -43,8 +43,8 @@ public class RagdollScript : MonoBehaviour
         if (sceneName != "MainMenu")
         {
             _camera.ClampCamera();
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, 0, 0), transform.position.y,
-                transform.position.z);
+            transform.parent.position = new Vector3(Mathf.Clamp(transform.parent.position .x, 0, 0), transform.parent.position.y,
+                transform.parent.position.z);
         }
 
     }
