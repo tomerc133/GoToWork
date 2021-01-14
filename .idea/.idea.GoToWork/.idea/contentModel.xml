@@ -16,6 +16,7 @@
           <e p="MainManu.cs" t="Include" />
           <e p="RagdollScript.cs" t="Include" />
           <e p="Rocket.cs" t="Include" />
+          <e p="RocketScript.cs" t="Include" />
           <e p="trampolin.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

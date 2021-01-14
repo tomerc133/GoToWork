@@ -39,8 +39,14 @@ public class RagdollScript : MonoBehaviour
             GameManager.addScore();
             inTheRightFloor = false;
         }
-        if(sceneName != "MainMenu")
+
+        if (sceneName != "MainMenu")
+        {
             _camera.ClampCamera();
+            transform.parent.position = new Vector3(Mathf.Clamp(transform.parent.position .x, 0, 0), transform.parent.position.y,
+                transform.parent.position.z);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)

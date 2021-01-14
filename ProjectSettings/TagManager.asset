@@ -8,6 +8,8 @@ TagManager:
   - Floor2
   - Floor3
   - playerFoot
+  - DetachPlayer
+  - BackWallCollider
   layers:
   - Default
   - TransparentFX
