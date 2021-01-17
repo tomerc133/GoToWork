@@ -12,7 +12,7 @@ public class levelCompleteScript : MonoBehaviour
 
     public void nextLvl()
     {
-        if (SceneManager.sceneCountInBuildSettings < SceneManager.GetActiveScene().buildIndex + 1)
+        if (SceneManager.sceneCountInBuildSettings >= SceneManager.GetActiveScene().buildIndex + 1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

@@ -41,13 +41,24 @@ public class Trampolin : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter(Collision other)
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.collider.CompareTag("Player"))
+    //     {
+    //         foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
+    //             bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
+    //         launched = true;
+    //     }
+    // }
+    
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
+            foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
             launched = true;
         }
     }
+   
 }
