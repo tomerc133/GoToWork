@@ -86,7 +86,7 @@ public class Rocket : MonoBehaviour
                 {
                     bodyPart.useGravity = true;
                     bodyPart.AddForce(Vector3.forward*1.5f, ForceMode.Impulse);
-                    bodyPart.AddForce(Vector3.up*2, ForceMode.Impulse);
+                    
                 }
             }
         }
