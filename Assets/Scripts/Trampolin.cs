@@ -13,7 +13,7 @@ public class Trampolin : MonoBehaviour
     [SerializeField] bool inversed = false;
     private Vector3 launchMovement = new Vector3(0, 5, 0);
 
-     void Start()
+    void Start()
     {
         _currentLoc =new Vector3(transform.position.x,transform.position.y,transform.position.z);
         launched = false;
@@ -31,7 +31,7 @@ public class Trampolin : MonoBehaviour
  
         if (Vector3.Distance(transform.position, (_currentLoc + launchMovement))<1)
         {
-             goDown = true;
+            goDown = true;
             launched = false;
         }
 
@@ -41,24 +41,24 @@ public class Trampolin : MonoBehaviour
         }
 
     }
-    // private void OnCollisionEnter(Collision other)
-    // {
-    //     if (other.collider.CompareTag("Player"))
-    //     {
-    //         foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
-    //             bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
-    //         launched = true;
-    //     }
-    // }
-    
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (other.collider.CompareTag("Player"))
         {
-            foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
+            foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
             launched = true;
         }
     }
-   
+    
+     private void OnTriggerEnter(Collider other)
+     {
+         if (other.CompareTag("Player"))
+         {
+             foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
+                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
+             launched = true;
+         }
+     }
+    
 }
