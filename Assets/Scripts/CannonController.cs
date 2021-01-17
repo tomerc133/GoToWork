@@ -88,12 +88,14 @@ public class CannonController : MonoBehaviour
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
                 if (shootForce <= 1)
                     _chargeUp = true;
+                bulletCloneHips.isKinematic = true;
                 bulletClone.transform.rotation = cannonTip.transform.rotation;
                 bulletClone.transform.position = cannonTip.transform.position;
             }
 
             if (Input.GetMouseButtonUp(0))
             {
+                bulletCloneHips.isKinematic = false;
                 foreach (Rigidbody bodyPart in bulletClone.GetComponentsInChildren<Rigidbody>())
                     bodyPart.AddForce(transform.forward * shootForce, ForceMode.Impulse);
                 shootForce = 1;
