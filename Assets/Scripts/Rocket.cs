@@ -87,10 +87,9 @@ public class Rocket : MonoBehaviour
         if (selfDestroy)
         {
             explosionPos = _rb.transform.position;
-            explosionTimer = Time.deltaTime;
+         
+            if (explosionTimer < addForceForTime)
             {
-                if (explosionTimer > addForceForTime)
-                    explosionPos = _rb.transform.position;
                 Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
                 foreach (Collider hit in colliders)
                 {
@@ -98,11 +97,16 @@ public class Rocket : MonoBehaviour
                         hit.attachedRigidbody.AddExplosionForce(15, explosionPos, radius, 5, ForceMode.Force);
                 }
             }
-            Destroy(gameObject);
             launchNow = false;
             _rb.isKinematic = true;
         }
     
+    }
+
+    private void Update()
+    {
+        if(selfDestroy)
+            explosionTimer += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)

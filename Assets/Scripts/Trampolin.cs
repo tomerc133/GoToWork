@@ -10,11 +10,15 @@ public class Trampolin : MonoBehaviour
     [SerializeField] private bool launched;
     private Vector3 _currentLoc;
     private bool goDown = false;
+    [SerializeField] bool inversed = false;
+    private Vector3 launchMovement = new Vector3(0, 5, 0);
 
-     void Start()
+    void Start()
     {
         _currentLoc =new Vector3(transform.position.x,transform.position.y,transform.position.z);
         launched = false;
+        if (inversed)
+            launchMovement *= -1;
     }
 
     void Update()
@@ -22,13 +26,12 @@ public class Trampolin : MonoBehaviour
         if (launched)
         {
             goDown = false;
-            transform.position = Vector3.Lerp(transform.position,  _currentLoc + new Vector3(0, 5, 0), 5f*Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position,  _currentLoc + launchMovement, 5f*Time.deltaTime);
         }
-           
-       
-        if (Vector3.Distance(transform.position, (_currentLoc + new Vector3(0, 5, 0)))<1)
+ 
+        if (Vector3.Distance(transform.position, (_currentLoc + launchMovement))<1)
         {
-             goDown = true;
+            goDown = true;
             launched = false;
         }
 
@@ -38,14 +41,24 @@ public class Trampolin : MonoBehaviour
         }
 
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (other.collider.CompareTag("Player"))
         {
-            foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
+            foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
             launched = true;
         }
     }
+    
+     private void OnTriggerEnter(Collider other)
+     {
+         if (other.CompareTag("Player"))
+         {
+             foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
+                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
+             launched = true;
+         }
+     }
+    
 }
