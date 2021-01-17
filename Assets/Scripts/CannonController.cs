@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class CannonController : MonoBehaviour
 {
-    [Header("Charging Shot")] [SerializeField]
-    private float shootMultiply = 5;
+    [Header("Charging Shot")] 
+    [SerializeField] private float shootMultiply = 5;
+
+    [SerializeField] private float maxShootForce = 500f;
 
     [SerializeField] private float slowDownDivider;
     private bool _chargeUp;
@@ -37,6 +39,7 @@ public class CannonController : MonoBehaviour
     void Start()
     {
         _chargeUp = true;
+        slider.maxValue = maxShootForce;
     }
 
     // Update is called once per frame
@@ -48,6 +51,7 @@ public class CannonController : MonoBehaviour
         ShootPlayer();
 
         slider.value = shootForce;
+        
 
         // view the velocity in inspector
         if (bulletCloneHips != null)
@@ -76,9 +80,9 @@ public class CannonController : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
-                if (shootForce < 500 && _chargeUp)
+                if (shootForce < maxShootForce && _chargeUp)
                     shootForce += shootMultiply * Time.deltaTime;
-                if (shootForce >= 500)
+                if (shootForce >= maxShootForce)
                     _chargeUp = false;
                 if (!_chargeUp && shootForce > 1)
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
