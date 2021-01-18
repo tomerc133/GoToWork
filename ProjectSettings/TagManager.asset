@@ -10,6 +10,8 @@ TagManager:
   - playerFoot
   - DetachPlayer
   - BackWallCollider
+  - BackgroundMusic
+  - Audio Manager
   layers:
   - Default
   - TransparentFX

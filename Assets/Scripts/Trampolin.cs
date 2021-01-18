@@ -12,9 +12,11 @@ public class Trampolin : MonoBehaviour
     private bool goDown = false;
     [SerializeField] bool inversed = false;
     private Vector3 launchMovement = new Vector3(0, 5, 0);
+    private AudioManager _audioManager;
 
     void Start()
     {
+        _audioManager = FindObjectOfType<AudioManager>();
         _currentLoc =new Vector3(transform.position.x,transform.position.y,transform.position.z);
         launched = false;
         if (inversed)
@@ -47,6 +49,7 @@ public class Trampolin : MonoBehaviour
         {
             foreach (Rigidbody bodyPart in other.gameObject.GetComponentsInChildren<Rigidbody>())
                 bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
+            _audioManager.PlayTrampolin();
             launched = true;
         }
     }
@@ -57,6 +60,7 @@ public class Trampolin : MonoBehaviour
          {
              foreach (Rigidbody bodyPart in other.GetComponentsInChildren<Rigidbody>())
                  bodyPart.AddForce(transform.up * power, ForceMode.Impulse);
+             _audioManager.PlayTrampolin();
              launched = true;
          }
      }
