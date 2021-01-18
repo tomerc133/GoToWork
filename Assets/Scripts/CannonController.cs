@@ -32,13 +32,16 @@ public class CannonController : MonoBehaviour
     [Header("ReadOnly")] [SerializeField] private float shootForce = 1;
     [SerializeField] private float hipsVelocity;
     private int numOfShoots=0;
-    [SerializeField] private AudioClip[] boomsound;
-    private AudioListener _audioListener;
 
 
-
+    //refrences
+    private AudioManager _audioManager;
     void Start()
     {
+        _audioManager = FindObjectOfType<AudioManager>();
+        if (_audioManager == null)
+            Debug.Log("No Audio Manager Found");
+        
         _chargeUp = true;
         slider.maxValue = maxShootForce;
         
@@ -78,6 +81,7 @@ public class CannonController : MonoBehaviour
                 bulletClone = Instantiate(charactersRb[characterIndex], cannonTip.transform.position,
                     cannonTip.transform.rotation);
                 bulletCloneHips = bulletClone.transform.GetChild(0).GetComponent<Rigidbody>();
+                
             }
 
             if (Input.GetMouseButton(0))
@@ -85,14 +89,16 @@ public class CannonController : MonoBehaviour
                 if (shootForce < maxShootForce && _chargeUp)
                 {
                     shootForce += shootMultiply * Time.deltaTime;
-                    
+                    _audioManager.PlayChargingUp();
+
+
                 }
                    
                 if (shootForce >= maxShootForce)
                     _chargeUp = false;
                 if (!_chargeUp && shootForce > 1)
                 {
-                     
+                    _audioManager.PlayChargingDown();
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
                 }
                 if (shootForce <= 1)
@@ -111,6 +117,9 @@ public class CannonController : MonoBehaviour
                 shotFired = true;
                 numOfShoots++;
                 InvokeRepeating("CheckCloneVelocity", 0.2f, 0.1f);
+                _audioManager.PlayBoomSound();
+                _audioManager.ResetSounds();
+                _audioManager.stopChargingSound = true;
             }
         }
     }

@@ -68,7 +68,8 @@ public class Rocket : MonoBehaviour
                 _rb.AddForce(transform.forward * rocketSpeed, ForceMode.Force);
                 foreach (Rigidbody bodyPart in player.GetComponentsInChildren<Rigidbody>())
                 {
-                    bodyPart.useGravity = false;
+                    if(bodyPart)
+                        bodyPart.useGravity = false;
                 }
             }
             else
