@@ -105,6 +105,7 @@ public class Rocket : MonoBehaviour
             }
             launchNow = false;
             _rb.isKinematic = true;
+            
         }
     
     }

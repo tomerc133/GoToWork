@@ -32,7 +32,8 @@ public class CannonController : MonoBehaviour
     [Header("ReadOnly")] [SerializeField] private float shootForce = 1;
     [SerializeField] private float hipsVelocity;
     private int numOfShoots=0;
-   
+    [SerializeField] private AudioClip[] boomsound;
+    private AudioListener _audioListener;
 
 
 
@@ -40,6 +41,7 @@ public class CannonController : MonoBehaviour
     {
         _chargeUp = true;
         slider.maxValue = maxShootForce;
+        
     }
 
     // Update is called once per frame
@@ -81,11 +83,18 @@ public class CannonController : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 if (shootForce < maxShootForce && _chargeUp)
+                {
                     shootForce += shootMultiply * Time.deltaTime;
+                    
+                }
+                   
                 if (shootForce >= maxShootForce)
                     _chargeUp = false;
                 if (!_chargeUp && shootForce > 1)
+                {
+                     
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
+                }
                 if (shootForce <= 1)
                     _chargeUp = true;
                 bulletCloneHips.isKinematic = true;
