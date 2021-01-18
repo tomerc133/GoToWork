@@ -86,12 +86,13 @@ public class CannonController : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
+                bulletCloneHips.isKinematic = true;
+                bulletClone.transform.rotation = cannonTip.transform.rotation;
+                bulletClone.transform.position = cannonTip.transform.position;
                 if (shootForce < maxShootForce && _chargeUp)
                 {
                     shootForce += shootMultiply * Time.deltaTime;
                     _audioManager.PlayChargingUp();
-
-
                 }
                    
                 if (shootForce >= maxShootForce)
@@ -101,11 +102,12 @@ public class CannonController : MonoBehaviour
                     _audioManager.PlayChargingDown();
                     shootForce -= (shootMultiply * Time.deltaTime) / slowDownDivider;
                 }
+
                 if (shootForce <= 1)
+                {
                     _chargeUp = true;
-                bulletCloneHips.isKinematic = true;
-                bulletClone.transform.rotation = cannonTip.transform.rotation;
-                bulletClone.transform.position = cannonTip.transform.position;
+                    _audioManager.ResetSounds();
+                }
             }
 
             if (Input.GetMouseButtonUp(0))

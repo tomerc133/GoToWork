@@ -20,11 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd57b2-e4ce-4017-9dcd-1703804ba6e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Glass 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Glass 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/satara_night_2k.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/satara_night_2k.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorV02Parent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FloorV02Parent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/levelComp1star.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/levelComp1star.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl1 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl1 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl4.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl4.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl4v2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl4v2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/new lvl2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/new lvl2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,18 +71,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OnTriggerChild.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TagSelectorPropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TagSelectorAttribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +152,8 @@
       <workItem from="1610621061244" duration="2707000" />
       <workItem from="1610884974386" duration="3273000" />
       <workItem from="1610911309232" duration="6185000" />
-      <workItem from="1610968155883" duration="3790000" />
+      <workItem from="1610968155883" duration="7373000" />
+      <workItem from="1610985041735" duration="1566000" />
     </task>
     <servers />
   </component>

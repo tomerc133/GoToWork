@@ -35,6 +35,14 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && SceneManager.GetActiveScene().buildIndex!=1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+        }
 
         if (_cannonController.allTheCharactersWereShot())
         {
@@ -56,7 +64,7 @@ public class GameManager : MonoBehaviour
             lvlComp.GetComponent<Animator>().SetTrigger("2stars");
         }
 
-        if (_score == MaxScore - 2)
+        if (_score <= MaxScore - 2)
         {
             lvlComp.GetComponent<Animator>().SetTrigger("1stars");
         }

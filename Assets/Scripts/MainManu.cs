@@ -12,18 +12,22 @@ public class MainManu : MonoBehaviour
     [SerializeField] private GameObject[] charactersRb;
     private GameObject bulletClone;
     private bool theGameHasStarted = false;
+    private AudioManager _audioManager;
 
     private void Awake()
     {
         bulletClone = Instantiate(charactersRb[0], cannonTip.transform.position, cannonTip.transform.rotation);
-     
+        _audioManager = FindObjectOfType<AudioManager>();
+
     }
 
 
     public void startGame()
     {
         theGameHasStarted = true;
+        _audioManager.PlayBoomSound();
         StartCoroutine(startGameEnumerator());
+        _audioManager.ResetSounds();
 
     }
 
