@@ -14,6 +14,7 @@ public class RagdollScript : MonoBehaviour
     public bool scaleTime;
     private GameManager GameManager;
     private CameraScript _camera;
+    private Rigidbody _rigidbody;
 
     private Scene _scene;
     private string sceneName;
@@ -27,13 +28,15 @@ public class RagdollScript : MonoBehaviour
         _camera = Camera.main.transform.GetComponent<CameraScript>();
         _scene = SceneManager.GetActiveScene();
         sceneName = _scene.name;
-        _velocity =transform.parent.GetComponent<Rigidbody>().velocity.magnitude;
+        _rigidbody = transform.parent.GetComponent<Rigidbody>();
 
     }
     
     // Update is called once per frame
     void Update()
     {
+        _velocity =_rigidbody.velocity.magnitude;
+        if (_velocity < 0.5f && inTheRightFloor)
         if (_velocity < 0.5f && inTheRightFloor)
         {
             GameManager.addScore();
