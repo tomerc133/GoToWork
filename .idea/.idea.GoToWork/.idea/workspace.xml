@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd57b2-e4ce-4017-9dcd-1703804ba6e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +60,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
       </list>
     </option>
   </component>
@@ -135,6 +134,7 @@
       <workItem from="1610985041735" duration="1893000" />
       <workItem from="1611001156593" duration="861000" />
       <workItem from="1611051648333" duration="140000" />
+      <workItem from="1611074684197" duration="21000" />
     </task>
     <servers />
   </component>
