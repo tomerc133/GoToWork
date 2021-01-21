@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8dd57b2-e4ce-4017-9dcd-1703804ba6e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoToWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl4v2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl4v2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/new lvl2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/new lvl2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +60,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-=======
-        <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
->>>>>>> 7ce54a6390c2febec9d38933c76a6e10af872cef
         <option value="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
       </list>
@@ -137,12 +139,7 @@
       <workItem from="1610968155883" duration="7373000" />
       <workItem from="1610985041735" duration="1893000" />
       <workItem from="1611001156593" duration="861000" />
-<<<<<<< HEAD
       <workItem from="1611225910268" duration="1901000" />
-=======
-      <workItem from="1611051648333" duration="140000" />
-      <workItem from="1611074684197" duration="21000" />
->>>>>>> 7ce54a6390c2febec9d38933c76a6e10af872cef
     </task>
     <servers />
   </component>

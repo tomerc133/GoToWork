@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator levelCompEnumerator()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         lvlComp.SetActive(true);
         if (_score == MaxScore)
         {
