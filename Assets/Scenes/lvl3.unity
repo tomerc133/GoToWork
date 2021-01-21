@@ -2512,6 +2512,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4350203}
     - target: {fileID: 2471451466130595026, guid: ed18ee5c59834d643a5eb994bc99b70f, type: 3}
+      propertyPath: cannonFire
+      value: 
+      objectReference: {fileID: 1776614974746566540, guid: 8f34180d810aa0144876e1b889196e6e, type: 3}
+    - target: {fileID: 2471451466130595026, guid: ed18ee5c59834d643a5eb994bc99b70f, type: 3}
       propertyPath: maxShootForce
       value: 700
       objectReference: {fileID: 0}

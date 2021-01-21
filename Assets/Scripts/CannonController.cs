@@ -18,10 +18,13 @@ public class CannonController : MonoBehaviour
 
     [Header("Prefabs to insert")] [SerializeField]
     private GameObject cannonTip;
-
+    [SerializeField] private GameObject cannonFire;
+    
     [SerializeField] private GameObject[] charactersRb;
 
-    [Header("UI")] [SerializeField] private Slider slider;
+    [Header("UI")]
+    [SerializeField] private Slider slider;
+   
 
 
     [Tooltip("Check in game mode if values change")] [Header("View only Values")]
@@ -36,8 +39,11 @@ public class CannonController : MonoBehaviour
 
     //refrences
     private AudioManager _audioManager;
+    private Transform _realCannonTip;
+    
     void Start()
     {
+        _realCannonTip = transform.GetChild(3).transform;
         _audioManager = FindObjectOfType<AudioManager>();
         if (_audioManager == null)
             Debug.Log("No Audio Manager Found");
@@ -115,6 +121,8 @@ public class CannonController : MonoBehaviour
                 bulletCloneHips.isKinematic = false;
                 foreach (Rigidbody bodyPart in bulletClone.GetComponentsInChildren<Rigidbody>())
                     bodyPart.AddForce(transform.forward * shootForce, ForceMode.Impulse);
+                GameObject partcileClone = Instantiate(cannonFire, _realCannonTip.position, transform.rotation);
+                Destroy(partcileClone, 2.5f);
                 shootForce = 1;
                 shotFired = true;
                 numOfShoots++;
@@ -122,6 +130,7 @@ public class CannonController : MonoBehaviour
                 _audioManager.PlayBoomSound();
                 _audioManager.ResetSounds();
                 _audioManager.stopChargingSound = true;
+                
             }
         }
     }
