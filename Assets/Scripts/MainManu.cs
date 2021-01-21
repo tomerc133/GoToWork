@@ -35,10 +35,15 @@ public class MainManu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
         if (theGameHasStarted)
         {
             foreach (Rigidbody bodyPart in bulletClone.GetComponentsInChildren<Rigidbody>())
-                bodyPart.AddForce(cannon.transform.forward * 1.5f, ForceMode.Impulse);
+                bodyPart.AddForce(cannon.transform.forward * 15, ForceMode.Impulse);
         }
     }
 

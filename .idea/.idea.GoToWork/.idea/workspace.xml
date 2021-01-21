@@ -65,9 +65,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampolin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +141,7 @@
       <workItem from="1611001156593" duration="861000" />
       <workItem from="1611225910268" duration="1901000" />
       <workItem from="1611228660292" duration="11000" />
+      <workItem from="1611232251430" duration="68000" />
     </task>
     <servers />
   </component>
