@@ -60,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RagdollScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/levelCompleteScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingScript.cs" />
@@ -68,6 +67,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CannonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -140,6 +140,7 @@
       <workItem from="1610985041735" duration="1893000" />
       <workItem from="1611001156593" duration="861000" />
       <workItem from="1611225910268" duration="1901000" />
+      <workItem from="1611228660292" duration="11000" />
     </task>
     <servers />
   </component>
