@@ -2,10 +2,12 @@
 using System.Collections;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class CannonController : MonoBehaviour
 {
+    public UnityEvent UnityEvent;
     [Header("Charging Shot")] 
     [SerializeField] private float shootMultiply = 5;
 
@@ -133,6 +135,11 @@ public class CannonController : MonoBehaviour
                 
             }
         }
+
+        if (allTheCharactersWereShot())
+        {
+            UnityEvent.Invoke();
+        }
     }
 
     void CheckCloneVelocity()
@@ -149,7 +156,7 @@ public class CannonController : MonoBehaviour
         }
     }
 
-    public bool allTheCharactersWereShot()
+    private bool allTheCharactersWereShot()
     {
         return charactersRb.Length == numOfShoots;
     }

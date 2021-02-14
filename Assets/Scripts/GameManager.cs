@@ -35,19 +35,21 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && SceneManager.GetActiveScene().buildIndex!=1)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (_cannonController.allTheCharactersWereShot())
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && SceneManager.GetActiveScene().buildIndex != 1)
         {
-            StartCoroutine(levelCompEnumerator());
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
+    }
+
+    public void LevelComplete()
+    {
+        StartCoroutine(levelCompEnumerator());
     }
 
     IEnumerator levelCompEnumerator()
@@ -70,9 +72,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void addScore()
+
+    public void AddScore(int amount)
     {
-        _score++;
+        _score += amount;
         Debug.Log(_score);
     }
 }

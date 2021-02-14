@@ -2,7 +2,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
+[Serializable]
+public class MyIntEvent : UnityEvent<int>
+{
+}
 
 public class RagdollScript : MonoBehaviour
 {
@@ -10,6 +15,7 @@ public class RagdollScript : MonoBehaviour
     private string floorTag;
 
     private bool sloMo = false;
+    public MyIntEvent m_MyEvent;
 
     public bool scaleTime;
     private GameManager GameManager;
@@ -39,7 +45,7 @@ public class RagdollScript : MonoBehaviour
         if (_velocity < 0.5f && inTheRightFloor)
         if (_velocity < 0.5f && inTheRightFloor)
         {
-            GameManager.addScore();
+            m_MyEvent.Invoke(1);
             inTheRightFloor = false;
         }
 

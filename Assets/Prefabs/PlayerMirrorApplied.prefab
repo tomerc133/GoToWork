@@ -617,6 +617,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorTag: Floor1
+  m_MyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7760933898671796916, guid: 0685218c0fea5054aa161ce5ea866c20, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   scaleTime: 0
 --- !u!65 &2025995927940372863
 BoxCollider:
@@ -2266,6 +2281,7 @@ GameObject:
   - component: {fileID: 4606598438560007458}
   - component: {fileID: 8374170202492616905}
   - component: {fileID: 8374170202492616906}
+  - component: {fileID: 7822369569551538549}
   m_Layer: 0
   m_Name: mixamorig:Hips
   m_TagString: Player
@@ -2320,3 +2336,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6965946, y: 1.0949017, z: 0.98062384}
   m_Center: {x: -0.000047922134, y: 0.32379597, z: -0.004167825}
+--- !u!208 &7822369569551538549
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877166555694292055}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.87, y: 3.255, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.82, z: 0}
+  m_TimeToStationary: 0.5
